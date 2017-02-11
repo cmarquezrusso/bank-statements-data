@@ -1,13 +1,12 @@
 # HACKATON: Bank Account Statements into Elastic Search
 This project is just a **playground** for importing **Bank accounts statements data** into **elastic search**
 
-TODO's
+##### *** TODO's list ***
 
+- [ ] Learn about elastic-search
 - [ ] Convert Bank's csv files into JSON files
 - [ ] Inject these JSON files into elastic-search
-- [ ] Create a elastic-search dashboard to show `interesting data` <sup>1</sup>
-- [ ]
-- [ ] Learn about elastic-search
+- [ ] Create a Kibana dashboard to show `interesting data` <sup>1</sup>
 
 <sup>1</sup> `Interesting data` = no idea of what im doing
 
@@ -26,7 +25,9 @@ This project requires **docker**, **node** and **npm**. Once docker is installed
 - `eval (docker-machine env default)`
 - `docker-compose up`
 
-This will start a new environment with `elasticsearch`, `logstash` and `kibana`, which will be accesible on http://docker.
+This will start a new environment with `elasticsearch`, `logstash` and `kibana`
+
+This is based on the work done by https://github.com/deviantony/docker-elk
 
 ## Testing
 
