@@ -1,7 +1,7 @@
 # HACKATON: Bank Account Statements into Elastic Search
 This project is just a **playground** for importing **Bank accounts statements data** into **elastic search**
 
-##### *** TODO's list ***
+##### TODO's list 
 
 - [ ] Learn about elastic-search
 - [ ] Convert Bank's csv files into JSON files
