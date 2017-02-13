@@ -25,6 +25,8 @@ This project requires **docker**, **node** and **npm**. Once docker is installed
 - `eval (docker-machine env default)`
 - `docker-compose up`
 
+sudo sysctl -w vm.max_map_count=262144
+
 This will start a new environment with `elasticsearch`, `logstash` and `kibana`
 
 This is based on the work done by https://github.com/deviantony/docker-elk
