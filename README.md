@@ -1,10 +1,13 @@
 # HACKATON: Bank Account Statements into Elastic Search
 This project is just a **playground** for importing **Bank accounts statements data** into **elastic search**
 
+Please vote for this feature to be added in BNZ
+https://community.bnz.co.nz/t/api-application-programming-interface/337
+
 ##### TODO's list 
 
 - [x] Learn about elastic-search
-- [x] ~Convert Bank's csv files into JSON files~ Not needed
+- [x] ~~Convert Bank's csv files into JSON files~~ Not needed
 - [x] Inject these JSON files into elastic-search
 - [ ] Create a Kibana dashboard to show `interesting data` <sup>1</sup>
 
@@ -53,6 +56,7 @@ However, you can use [my utility](https://github.com/cristian04/util-bnz-data-ex
   `npm install --global csv2json`
 
 ## How to import data into elastic-search
+
 - CSV Files: Just put your CSV files into logstash/data
 - Using Utility (Recommended) Refer to https://github.com/cristian04/util-bnz-data-extractor
 
