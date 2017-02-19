@@ -58,7 +58,7 @@ However, you can use [my utility](https://github.com/cristian04/util-bnz-data-ex
 
 ## How to import data into elastic-search
 
-- CSV Files: Just put your CSV files into logstash/data
+- CSV Files: Just put your CSV files into `logstash/data`
 - Using Utility (Recommended) Refer to https://github.com/cristian04/util-bnz-data-extractor
 
 # Contributions:
