@@ -7,20 +7,20 @@ https://community.bnz.co.nz/t/api-application-programming-interface/337
 ##### TODO's list 
 
 - [x] Learn about elastic-search
-- [x] ~~Convert Bank's csv files into JSON files~~ Not needed
+- [x] ~~Convert Bank's csv files into JSON files~~ Not needed. CSV files must be ingested by using logstash. Json file must be ingested by elastic-search api
 - [x] Inject these JSON files into elastic-search
 - [ ] Create a Kibana dashboard to show `interesting data` <sup>1</sup>
+- [ ] Create a Machine Learning Engine to analyze and categorize data <sup>1</sup>
 
-<sup>1</sup> `Interesting data` = no idea of what im doing
+<sup>1</sup> No idea of what Im doing
 
 ## Installation instructions
-
-### Requirements:
-
 ### Disclaimer:
 `
 I'm using fish shell :).
 `
+
+### Requirements:
 
 This project requires **docker**, **node** and **npm**. Once docker is installed, just execute the following commands:
 
@@ -63,3 +63,7 @@ However, you can use [my utility](https://github.com/cristian04/util-bnz-data-ex
 
 # Contributions:
 Feel free to add your suggestions and ideas on this project.
+
+# Credits 
+
+[Cristian Russo](http://www.cristianmarquez.me)
