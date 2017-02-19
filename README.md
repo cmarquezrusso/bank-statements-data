@@ -1,7 +1,7 @@
 # HACKATON: Bank Account Statements into Elastic Search
 This project is just a **playground** for importing **Bank accounts statements data** into **elastic search**
 
-Please vote for this feature to be added in BNZ
+Please vote for an API feature to be added in BNZ
 https://community.bnz.co.nz/t/api-application-programming-interface/337
 
 ##### TODO's list 
@@ -25,10 +25,11 @@ I'm using fish shell :).
 This project requires **docker**, **node** and **npm**. Once docker is installed, just execute the following commands:
 
 - `docker-machine start default`
+  - `docker-machine ssh`
+  - `sudo sysctl -w vm.max_map_count=262144` This is required for elastic-search
+  - `exit`
 - `eval (docker-machine env default)`
 - `docker-compose up`
-
-sudo sysctl -w vm.max_map_count=262144
 
 This will start a new environment with `elasticsearch`, `logstash` and `kibana`
 
@@ -39,9 +40,9 @@ This is based on the work done by https://github.com/deviantony/docker-elk
 ## Bank of New Zealand (BNZ)
 
 BNZ officialy supports the following file formats: `CSV`, `QIF`, `GIFTS` and `OFX`
-These formats are poor on details (time doesnt exists here)
+These formats are poor on details (transaction time doesnt exist here)
 
-However, you can use [my utility](https://github.com/cristian04/util-bnz-data-extractor) which is using BNZ API and importing transactions into elastic search.
+However, you can use [my utility](https://github.com/cristian04/util-bnz-data-extractor) which is using BNZ API and importing transactions into elastic search. To avoid reverse engineering, please vote for this https://community.bnz.co.nz/t/api-application-programming-interface/337
 
 ### How to export bank statements
 - Login into your account
