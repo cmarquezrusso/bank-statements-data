@@ -14,6 +14,9 @@ https://community.bnz.co.nz/t/api-application-programming-interface/337
 
 <sup>1</sup> No idea of what Im doing
 
+## UPDATE: We are using taiga to track our feature requests. 
+https://tree.taiga.io/project/cristian04-bnz-cashnav/kanba
+
 ## Installation instructions
 ### Disclaimer:
 `
