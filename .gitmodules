@@ -1,0 +1,6 @@
+[submodule "bnz-chrome-extension"]
+	path = bnz-chrome-extension
+	url = git@github.com:cristian04/bnz-chrome-extension.git
+[submodule "bnz-token-receiver"]
+	path = bnz-token-receiver
+	url = git@github.com:cristian04/bnz-token-receiver.git
