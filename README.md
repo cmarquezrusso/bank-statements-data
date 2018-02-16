@@ -1,76 +1,43 @@
-# HACKATON: Bank Account Statements into Elastic Search
-This project is just a **playground** for importing **Bank accounts statements data** into **elastic search**
+# BNZ CashNav
 
-Please vote for an API feature to be added in BNZ
-https://community.bnz.co.nz/t/api-application-programming-interface/337
+This is my approach to create a kubeapp (kubernetes application) to analyze my bank transactions.
 
-##### TODO's list 
+Inspired by learning about the ELK stack (for centralised logging) and by Westpac CashNav app https://www.westpac.co.nz/bank-accounts/everyday-money-tools/cashnav/
 
-- [x] Learn about elastic-search
-- [x] ~~Convert Bank's csv files into JSON files~~ Not needed. CSV files must be ingested by using logstash. Json file must be ingested by elastic-search api
-- [x] Inject these JSON files into elastic-search
-- [ ] Create a Kibana dashboard to show `interesting data` <sup>1</sup>
-- [ ] Create a Machine Learning Engine to analyze and categorize data <sup>1</sup>
+As BNZ doesnt have an application like CashNav, I decided to build my own.
 
-<sup>1</sup> No idea of what Im doing
+**Technology stack**: Kubernetes, Docker, Python, Javascript
+
+## How does it works? 
+
+TBC  
+
+# Architecture diagram
+
+TBC
 
 ## UPDATE: We are using taiga to track our feature requests. 
 https://tree.taiga.io/project/cristian04-bnz-cashnav/kanba
 
 ## Installation instructions
-### Disclaimer:
-`
-I'm using fish shell :).
-`
 
-### Update
-minikube start --memory 4096
+TBC
 
-kubectl create configmap k8s-temp --from-file=/Users/cristian04/.minikube --from-file=config=/Users/cristian04/.kube/config
+### NEW! Running on Kubernetes!
 
-### Requirements:
+`git clone`
 
-This project requires **docker**, **node** and **npm**. Once docker is installed, just execute the following commands:
+`minikube start --memory 4096`
 
-- `docker-machine start default`
-  - `docker-machine ssh`
-  - `sudo sysctl -w vm.max_map_count=262144` This is required for elastic-search
-  - `exit`
-- `eval (docker-machine env default)`
-- `docker-compose up`
+`kubectl create configmap k8s-temp --from-file=/Users/cristian04/.minikube --from-file=config=/Users/cristian04/.kube/config`
 
-This will start a new environment with `elasticsearch`, `logstash` and `kibana`
 
-This is based on the work done by https://github.com/deviantony/docker-elk
-
-# Supported Banks:
-
-## Bank of New Zealand (BNZ)
-
-BNZ officialy supports the following file formats: `CSV`, `QIF`, `GIFTS` and `OFX`
-These formats are poor on details (transaction time doesnt exist here)
-
-However, you can use [my utility](https://github.com/cristian04/util-bnz-data-extractor) which is using BNZ API and importing transactions into elastic search. To avoid reverse engineering, please vote for this https://community.bnz.co.nz/t/api-application-programming-interface/337
-
-### How to export bank statements
-- Login into your account
-- Select the account that you want and click on Export
-- Select CSV and select the desired time range.
-
-`Tip: More data = More stuff to play with`
-
-# Tools
-
-- CSV2JSON: This tools converts CSV files into a JSON, which are easier digested by `elastic-search`
-  `npm install --global csv2json`
-
-## How to import data into elastic-search
-
-- CSV Files: Just put your CSV files into `logstash/data`
-- Using Utility (Recommended) Refer to https://github.com/cristian04/util-bnz-data-extractor
 
 # Contributions:
-Feel free to add your suggestions and ideas on this project.
+Feel free to add your suggestions and ideas on this project
+
+>> Please vote for an API feature to be added in BNZ
+   https://community.bnz.co.nz/t/api-application-programming-interface/337
 
 # Credits 
 
