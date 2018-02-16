@@ -4,3 +4,9 @@
 [submodule "bnz-token-receiver"]
 	path = bnz-token-receiver
 	url = git@github.com:cristian04/bnz-token-receiver.git
+[submodule "kubernetes-elastic-stack"]
+	path = kubernetes-elastic-stack
+	url = git@github.com:giantswarm/kubernetes-elastic-stack.git
+[submodule "minikube-prometheus-demo"]
+	path = minikube-prometheus-demo
+	url = git@github.com:bakins/minikube-prometheus-demo.git
