@@ -20,6 +20,11 @@ https://community.bnz.co.nz/t/api-application-programming-interface/337
 I'm using fish shell :).
 `
 
+### Update
+minikube start --memory 4096
+
+kubectl create configmap k8s-temp --from-file=/Users/cristian04/.minikube --from-file=config=/Users/cristian04/.kube/config
+
 ### Requirements:
 
 This project requires **docker**, **node** and **npm**. Once docker is installed, just execute the following commands:
