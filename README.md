@@ -2,26 +2,16 @@
 
 This is my approach to create a kubeapp (kubernetes application) to analyze my bank transactions.
 
-Inspired by learning about the ELK stack (for centralised logging) and by Westpac CashNav app https://www.westpac.co.nz/bank-accounts/everyday-money-tools/cashnav/
+Inspired by learning about the ELK stack (for centralised logging) and by CashNav. https://www.westpac.co.nz/bank-accounts/everyday-money-tools/cashnav/
 
-As BNZ doesnt have an application like CashNav, I decided to build my own.
+# As BNZ doesnt have an application like CashNav, I decided to build my own.
 
 **Technology stack**: Kubernetes, Docker, Python, Javascript
-
-## How does it works? 
-
-TBC  
-
-# Architecture diagram
-
-TBC
 
 ## UPDATE: We are using taiga to track our feature requests. 
 https://tree.taiga.io/project/cristian04-bnz-cashnav/kanba
 
 ## Installation instructions
-
-TBC
 
 ### NEW! Running on Kubernetes!
 
